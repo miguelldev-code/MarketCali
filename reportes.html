@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - MarketCali</title>    
+    <link rel="shortcut icon" href="/src/logo.png" />
+    <!-- Enlace a los estilos de Bootstrap (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="/src/logo.png" alt="MarketCali Logo" class="me-2 img-thumbnail">
+                    MarketCali
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="admin.html" class="nav-link">Administrador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="empleados.html" class="nav-link">Empleados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <main class="py-4">
+        <section class="container">
+            <h2 class="mb-4">Reportes</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-primary mb-3" onclick="generarReporteIngresos()">Generar Informe de Ingresos Totales</button>
+                    <div id="reportContent"></div>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary mb-3" onclick="generarReporteProductosVendidos()">Generar Informe de Productos Más Vendidos</button>
+                    <div id="reportContentProductos"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Enlace a los scripts de JavaScript de Bootstrap (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Script personalizado para la generación de reportes -->
+    <script src="/js/reportes.js"></script>
+</body>
+</html>
