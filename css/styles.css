@@ -78,6 +78,16 @@ header img {
     margin-bottom: 10px;
 }
 
+/* Estilos para el footer */
+footer{
+    padding: 20px;
+    background-color: #007bff;
+    justify-items: center;
+    color: #ffffff;
+}
+
+footer .
+
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .container {
