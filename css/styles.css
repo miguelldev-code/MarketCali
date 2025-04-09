@@ -79,14 +79,25 @@ header img {
 }
 
 /* Estilos para el footer */
-footer{
+footer {
     padding: 20px;
     background-color: #007bff;
-    justify-items: center;
     color: #ffffff;
-}
-
-footer .
+    display: flex;               /* Usamos flex para centrar el contenido */
+    justify-content: center;    /* Centra horizontalmente */
+    align-items: center;        /* Centra verticalmente */
+  }
+  
+  .footerImg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  footer img {
+    max-width: 50px;
+  }
+  
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
